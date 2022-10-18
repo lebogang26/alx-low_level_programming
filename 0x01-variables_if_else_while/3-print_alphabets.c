@@ -5,12 +5,18 @@
  */
 int main(void)
 {
-	char letters;
-
-	for (letters = 'a'; letters <= 'z'; letters++)
-		putchar(letters);
-	for (letters = 'A'; letters <= 'Z'; letters++)
-		putchar(letters);
-	putchar('\n');
-	return (0);
+	char az;
+	/*print to lowercase*/
+	putchar("\Lowercase alphabets: \n");
+	for (az = 'a'; az <= 'z'; az++)
+		{
+			putchar("%c ", az);
+		}
+		/*print to uppercase*/
+		putchar("Uppercase alphabets: \n");
+		for (az = 'A'; az <= 'Z'; az++)
+		{
+			putchar("%c", az);
+		}
+		return (0);
 }
